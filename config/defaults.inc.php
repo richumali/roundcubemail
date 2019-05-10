@@ -262,7 +262,7 @@ $config['messages_cache_threshold'] = 50;
 // %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
 // %z - IMAP domain (IMAP hostname without the first part)
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['smtp_server'] = 'localhost';
+$config['smtp_server'] = 'Tls://localhost';
 
 // SMTP port (default is 587)
 $config['smtp_port'] = 587;
@@ -418,13 +418,13 @@ $config['temp_dir_ttl'] = '48h';
 // With this option enabled, all non-secure connections will be redirected.
 // It can be also a port number, hostname or hostname:port if they are
 // different than default HTTP_HOST:443
-$config['force_https'] = false;
+$config['force_https'] = True;
 
 // tell PHP that it should work as under secure connection
 // even if it doesn't recognize it as secure ($_SERVER['HTTPS'] is not set)
 // e.g. when you're running Roundcube behind a https proxy
 // this option is mutually exclusive to 'force_https' and only either one of them should be set to true.
-$config['use_https'] = false;
+$config['use_https'] = True;
 
 // Allow browser-autocompletion on login form.
 // 0 - disabled, 1 - username and host only, 2 - username, host, password
